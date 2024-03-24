@@ -6,12 +6,12 @@ function NavBar() {
 
     return (
         <>
-            <nav className="navbar navbar-expand-lg bg-dark global-style opaque-bg" data-bs-theme="dark">
+            <nav className="navbar navbar-expand-lg bg-dark global-style navbar-bg" data-bs-theme="dark" id="navbar">
                 <div className="container-fluid">
                     <a className="navbar-brand no-opacity" href="/home">Aidan David</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
+                            aria-expanded="false" aria-label="Toggle navigation" id="nav-toggler">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
