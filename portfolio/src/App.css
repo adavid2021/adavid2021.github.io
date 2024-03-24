@@ -1,0 +1,43 @@
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  position: absolute;
+  /*background: #3a3c48;*/
+  /*background-image: url(background-img-02.png);*/
+  background-image: url(pawel-czerwinski-prMn9KINLtI-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.global-style {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+#nav-hover:hover {
+  color: #838585;
+  opacity: 100%;
+}
+
+.opaque-bg {
+  opacity: 75%;
+  background: rgba(0,0,0,0.9) !important;
+}
+
+.no-opacity {
+  opacity: 100%;
+}
+
+.home-page {
+  /*width: 100%;*/
+  /*height: 100%;*/
+}
+
+.navigation-bar {
+  width: 100%;
+}
