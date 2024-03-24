@@ -68,55 +68,6 @@
   text-align: center;
 }
 
-.container-a {
-  width: 100%;
-  height: 100%;
-  padding: 100px min(80px, 15%) 0 min(80px, 15%);
-}
-
-.container-a h1 {
-  border-bottom: 1px solid #f9f9f9;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
-.container-a h4 {
-  margin-bottom: 5px;
-}
-
-.container-b {
-  width: 100%;
-  margin-top: 30px;
-  display: flex;
-  flex-direction: row;
-}
-
-.container-b a {
-  margin-left: 20px;
-  color: #d7e2ff;
-  text-decoration: underline;
-}
-
-.container-b a:hover {
-  color: #7c92e8;
-}
-
-.container-c {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-
-.container-c a {
-  margin-left: 20px;
-  color: #d7e2ff;
-  text-decoration: underline;
-}
-
-.container-c a:hover {
-  color: #7c92e8;
-}
-
 /** Home Page **/
 .home-page {
   position: fixed;
@@ -139,4 +90,102 @@
   height: 100%;
   width: 100%;
   z-index: 2;
+}
+
+.c-contact-a {
+  width: 100%;
+  height: 100%;
+  padding: 100px min(80px, 15%) 50px min(80px, 15%);
+}
+
+.c-contact-a h1 {
+  border-bottom: 1px solid #f9f9f9;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.c-contact-a h4 {
+  margin-bottom: 5px;
+}
+
+.c-contact-b {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.c-contact-b a {
+  margin-left: 20px;
+  color: #d7e2ff;
+  text-decoration: underline;
+}
+
+.c-contact-b a:hover {
+  color: #7c92e8;
+}
+
+.c-contact-c {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.c-contact-c a {
+  margin-left: 20px;
+  color: #d7e2ff;
+  text-decoration: underline;
+}
+
+.c-contact-c a:hover {
+  color: #7c92e8;
+}
+
+/** Portfolio Page **/
+.portfolio-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.c-portfolio-a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 0 20px;
+}
+
+.c-portfolio-b {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0 20px 0;
+}
+
+.pi {
+  transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.pi:hover {
+  background-color: #88aeff;
+  cursor: pointer;
+  border: solid #1d1d42 2px;
+}
+
+.pi:not(:hover) {
+  background-color: #d7eaff;
+  border: solid #3d3e8a 2px;
+}
+
+.pi-title {
+  padding: 10px;
+  margin: 0;
+}
+
+.pi-title h4, p {
+  margin: 0;
 }
