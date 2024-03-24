@@ -1,9 +1,4 @@
-// import { useState } from 'react'
-import { Link } from 'react-router-dom';
-
 function NavBar() {
-    // const [count, setCount] = useState(0)
-
     return (
         <>
             <nav className="navbar navbar-expand-lg bg-dark global-style navbar-bg" data-bs-theme="dark" id="navbar">

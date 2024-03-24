@@ -1,13 +1,27 @@
-// import { useState } from 'react'
-import NavBar from "./NavBar.jsx";
-
 function Contact() {
-    // const [count, setCount] = useState(0)
-
     return (
         <>
             <div className="contact-page global-style">
-                Contact
+                <div className="opaque-bg">
+                    <div className="container-a">
+                        <h1>Contact</h1>
+                        <h4>Aidan David</h4>
+                        <h4>ajdavid@bu.edu</h4>
+                        <h4>781-201-0465</h4>
+                        <div className="container-b">
+                            <h4>LinkedIn:</h4>
+                            <a href="https://www.linkedin.com/in/aidan-david-355449192/" target="_blank">
+                                <h4>LinkedIn Profile</h4>
+                            </a>
+                        </div>
+                        <div className="container-c">
+                            <h4>GitHub:</h4>
+                            <a href="https://github.com/adavid2021" target="_blank">
+                                <h4>Github Profile</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     )
