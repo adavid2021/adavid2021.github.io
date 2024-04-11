@@ -8,8 +8,8 @@ function Portfolio() {
                     <div className="c-contact-a">
                         <div className="c-portfolio-b">
                             <div className="c-portfolio-a">
-                                <PortfolioItem titleText="test title" bodyText="test body text"
-                                               portfolioLink = "/home"/>
+                                <PortfolioItem titleText="Predicting Nightmares with Machine Learning" bodyText="test body text"
+                                               portfolioLink = "/project_cnrc"/>
                             </div>
                             <div className="c-portfolio-a">
                                 <PortfolioItem titleText="test title" bodyText="test body text"
@@ -21,10 +21,10 @@ function Portfolio() {
                                 <PortfolioItem titleText="test title" bodyText="test body text"
                                                portfolioLink = "/about"/>
                             </div>
-                            <div className="c-portfolio-a">
-                                <PortfolioItem titleText="test title" bodyText="test body text"
-                                               portfolioLink = "/"/>
-                            </div>
+                            {/*<div className="c-portfolio-a">*/}
+                            {/*    <PortfolioItem titleText="test title" bodyText="test body text"*/}
+                            {/*                   portfolioLink = "/"/>*/}
+                            {/*</div>*/}
                         </div>
                     </div>
                 </div>
