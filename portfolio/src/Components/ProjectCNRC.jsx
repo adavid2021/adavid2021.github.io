@@ -8,9 +8,8 @@ function ProjectCNRC() {
                             <h3>Predicting Nightmares with Machine Learning</h3>
                         </div>
                         <div className="project-upper-band">
-                            <div className="project-upper-band-item">
+                            <div className="project-upper-band-item upper-padding">
                                 <h4>Goals</h4>
-                                <br/>
                                 <ul>
                                     <li>
                                         Determine which
@@ -29,25 +28,28 @@ function ProjectCNRC() {
                                     </li>
                                 </ul>
                             </div>
+                            <div className="border-right"/>
                             <div className="project-upper-band-item">
                                 <h4>Skills Developed</h4>
+                                <b>Technical:</b>
                                 <br/>
-                                <p><b>Technical:</b>
-                                    <br/>
+                                <p>
                                     I programmed computational (theory-based) models with Java, conducted and automated
                                     hypothesis testing in
                                     statistical tests with SPSS, and developed predictive models using R. I also
                                     visualized outputs with graphing libraries to explain the data.
-                                    <br/>
-                                    <br/>
-                                    <b>General:</b><br/>
-                                    I interpreted and presented findings to a technical and non-technical audience
+                                </p>
+                                <br/>
+                                <b>General:</b>
+                                <br/>
+                                <p>
+                                    I presented findings to a technical and non-technical audience
                                     of supervisors and clients.
                                 </p>
                             </div>
-                            <div className="project-upper-band-item">
+                            <div className="border-right"/>
+                            <div className="project-upper-band-item lower-padding">
                                 <h4>Project Findings</h4>
-                                <br/>
                                 <p>
                                     We found that lack of cognitive control (a person’s perceived ability to control
                                     intrusive negative
@@ -60,7 +62,7 @@ function ProjectCNRC() {
                                 </p>
                             </div>
                         </div>
-                        <div className="project-lower-band-item">
+                        <div className="project-lower-band">
                             <h5>Preprocessing the Survey Data</h5>
                             <p>
                                 The survey we used measured various cognitive
@@ -100,37 +102,41 @@ function ProjectCNRC() {
                                 <br/>
                                 The input measures were as follows:
                                 <br/>
-                                <ul>
-                                    <li><b>PTSD:</b> The general impact of Post-Traumatic Stress Disorder on the
-                                        simulated
-                                        individual
-                                    </li>
-                                    <li><b>Cognitive Control Over Emotion:</b> The simulated individual’s estimated
-                                        ability to
-                                        maintain emotional stability
-                                    </li>
-                                    <li><b>Stress:</b> The simulated individual’s estimated stress level
-                                    </li>
-                                    <li><b>Depression:</b> The simulated individual’s estimated depression level
-                                    </li>
-                                    <li><b>ExecutiveScore:</b> The simulated individual’s estimated cognitive impairment
-                                    </li>
-                                    <li><b>Neuroticism:</b> The simulated individual’s estimated neuroticism</li>
-                                </ul>
+                            </p>
+                            <ul>
+                                <li><b>PTSD:</b> The general impact of Post-Traumatic Stress Disorder on the
+                                    simulated
+                                    individual
+                                </li>
+                                <li><b>Cognitive Control Over Emotion:</b> The simulated individual’s estimated
+                                    ability to
+                                    maintain emotional stability
+                                </li>
+                                <li><b>Stress:</b> The simulated individual’s estimated stress level
+                                </li>
+                                <li><b>Depression:</b> The simulated individual’s estimated depression level
+                                </li>
+                                <li><b>ExecutiveScore:</b> The simulated individual’s estimated cognitive impairment
+                                </li>
+                                <li><b>Neuroticism:</b> The simulated individual’s estimated neuroticism</li>
+                            </ul>
+                            <p>
                                 The outputs we predicted were as follows:
                                 <br/>
-                                <ul>
-                                    <li><b>Nightmare Distress:</b> The distress caused by the nightmares during the
-                                        nightmare
-                                    </li>
-                                    <li><b>Nightmare Effects:</b> The negative psychophysiological effects caused by
-                                        nightmares, including indirect impact such as REM deficit, sleep deficit, etc
-                                    </li>
-                                    <li><b>Nightmare Frequency:</b> how often a person has nightmares
-                                    </li>
-                                    <li><b>DASS Anxiety:</b> Depression and Anxiety levels caused by nightmares
-                                    </li>
-                                </ul>
+                            </p>
+                            <ul>
+                                <li><b>Nightmare Distress:</b> The distress caused by the nightmares during the
+                                    nightmare
+                                </li>
+                                <li><b>Nightmare Effects:</b> The negative psychophysiological effects caused by
+                                    nightmares, including indirect impact such as REM deficit, sleep deficit, etc
+                                </li>
+                                <li><b>Nightmare Frequency:</b> how often a person has nightmares
+                                </li>
+                                <li><b>DASS Anxiety:</b> Depression and Anxiety levels caused by nightmares
+                                </li>
+                            </ul>
+                            <p>
                                 In the linear regression model, we trained with all 118 participant data rows and found
                                 our goodness-of-fit measure (MSE) came out to be 0.0138 averaged across all four
                                 outputs.

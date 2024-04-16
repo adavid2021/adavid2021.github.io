@@ -7,21 +7,30 @@ function NavBar() {
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation" id="nav-toggler">
-                        <span className="navbar-toggler-icon"></span>
+                        <i className="fa-solid fa-bars"></i>
+                        {/*<span className="navbar-toggler-icon" style={{fontSize:20, color:"white"}}></span>*/}
                     </button>
+                    {/*<button className="navbar-toggler" type="button" data-bs-toggle="collapse"*/}
+                    {/*        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"*/}
+                    {/*        aria-expanded="false" aria-label="Toggle navigation">*/}
+                    {/*    <span className="navbar-toggler-icon"></span>*/}
+                    {/*</button>*/}
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
                                 <a className="nav-link active" aria-current="page" href="/home" id="nav-hover">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/portfolio" id="nav-hover">Portfolio</a>
+                                <a className="nav-link active" aria-current="page" href="/portfolio"
+                                   id="nav-hover">Portfolio</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/contact" id="nav-hover">Contact</a>
+                                <a className="nav-link active" aria-current="page" href="/contact"
+                                   id="nav-hover">Contact</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/about" id="nav-hover">About Me</a>
+                                <a className="nav-link active" aria-current="page" href="/about" id="nav-hover">About
+                                    Me</a>
                             </li>
                         </ul>
                     </div>

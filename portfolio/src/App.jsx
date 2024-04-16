@@ -24,7 +24,7 @@ function App() {
                   <Route path="/contact" element={<Contact/>}/>
                   <Route path="/about" element={<About/>}/>
                   <Route path="/project_cnrc" element={<ProjectCNRC/>}/>
-                  <Route path="/project_nyc_biking" element={<ProjectNYCBiking/>}/>
+                  <Route path="/project_nyc_biking/" element={<ProjectNYCBiking/>}/>
               </Routes>
           </BrowserRouter>
       </>

@@ -1,8 +1,8 @@
 import PortfolioItem from "./PortfolioItem.jsx";
 
 function Portfolio() {
-    const nightmareBodyText = "How can machine learning help us to understand the causes of " +
-        "and prevent nightmares?"
+    const nightmareBodyText = "How can machine learning help to understand the causes of " +
+        "nightmares?"
     const cyclistVisualizationBody = "Which New York boroughs are the most dangerous for bikers and why?"
     return (
         <>

@@ -37,12 +37,25 @@
   font-weight: 500;
 }
 
+.navbar-toggler {
+  background-color: white;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
 .navigation-bar {
   width: 100%;
 }
 
 .navbar-brand {
   font-weight: 500;
+  color: aliceblue;
+}
+
+.nav-link {
+  color: aliceblue;
 }
 
 .no-opacity {
@@ -172,20 +185,10 @@
   align-items: center;
 }
 
-/*@media (min-width: 1200px) {*/
-/*  .c-portfolio-b {*/
-/*    width: 100%;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    padding: 20px 0 20px 0;*/
-/*    align-items: center;*/
-/*  }*/
-/*}*/
-
 .pi {
   transition: border 0.3s ease, background-color 0.3s ease;
   padding: 10px;
-  /*width: 100%;*/
+  color: black;
 }
 
 .pi:hover {
@@ -213,6 +216,7 @@
   background-color: #D7EAFFFF;
   color: black;
   border-radius: 5px;
+  line-height: 1.25;
 }
 .project-title {
   padding: 20px 10px 20px 10px;
@@ -232,23 +236,47 @@
   width: 100%;
   height: 100%;
   padding: 25px;
-  /*border-left: solid black 1px;*/
-  /*border-right: solid black 1px;*/
-
 }
 
-.project-lower-band-item {
-  padding: 15px;
+.project-upper-band-item b{
+    margin-bottom: 50px;
+}
+
+.project-upper-band li{
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+    .project-upper-band {
+        flex-direction: column;
+    }
+    .project-upper-band-item {
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    .upper-padding {
+      padding-top: 20px;
+    }
+    .lower-padding {
+      padding-bottom: 20px;
+    }
+}
+
+.project-lower-band {
+  padding: 25px;
+}
+
+.project-lower-band li{
+  margin-bottom: 3px;
+}
+
+.project-lower-band ul{
+    margin: 10px 0 15px 0;
 }
 
 .project-bg b{
   font-weight: 600;
 }
-
-/*.project-lower-band-item li b{*/
-/*  font-weight: 600;*/
-/*}*/
-
 
 .img-prediction-error {
   background-image: url(assets/frequency.png);
@@ -260,5 +288,105 @@
   background-size: contain;
   background-position: left;
   margin-top: 20px;
-  /*background-attachment: fixed;*/
+}
+
+.img-rdb {
+  background-image: url(assets/relation_db.png);
+
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  margin-top: 20px;
+}
+
+.nyc-img-div {
+  height: 565px;
+  align-items: center;
+  background-color: white;
+}
+
+/*.carousel-item.active {*/
+/*  align-items: center;*/
+/*}*/
+
+/*.carousel-item img{*/
+/*  !*height: initial;*!*/
+/*  width: 100%;*/
+/*}*/
+
+/*#q5 {*/
+/*  height: 124px;*/
+/*}*/
+
+/*.img-q1 {*/
+/*  background-image: url(assets/query1.png);*/
+
+/*  position: relative;*/
+/*  width: 100%;*/
+/*  height: 500px;*/
+/*  background-repeat: no-repeat;*/
+/*  background-size: contain;*/
+/*  background-position: left;*/
+/*  margin-top: 20px;*/
+/*  !*background-attachment: fixed;*!*/
+/*}*/
+
+/*.img-q2 {*/
+/*  background-image: url(assets/query2.png);*/
+
+/*  position: relative;*/
+/*  width: 100%;*/
+/*  height: 500px;*/
+/*  background-repeat: no-repeat;*/
+/*  background-size: contain;*/
+/*  background-position: left;*/
+/*  margin-top: 20px;*/
+/*  !*background-attachment: fixed;*!*/
+/*}*/
+
+/*.img-q3 {*/
+/*  background-image: url(assets/query3.png);*/
+
+/*  position: relative;*/
+/*  width: 100%;*/
+/*  height: 500px;*/
+/*  background-repeat: no-repeat;*/
+/*  background-size: contain;*/
+/*  background-position: left;*/
+/*  margin-top: 20px;*/
+/*  !*background-attachment: fixed;*!*/
+/*}*/
+
+/*.img-q4 {*/
+/*  background-image: url(assets/query4.png);*/
+
+/*  position: relative;*/
+/*  width: 100%;*/
+/*  height: 500px;*/
+/*  background-repeat: no-repeat;*/
+/*  background-size: contain;*/
+/*  background-position: left;*/
+/*  margin-top: 20px;*/
+/*  !*background-attachment: fixed;*!*/
+/*}*/
+
+/*.img-q5 {*/
+/*  background-image: url(assets/query5.png);*/
+
+/*  position: relative;*/
+/*  width: 100%;*/
+/*  height: 500px;*/
+/*  background-repeat: no-repeat;*/
+/*  background-size: contain;*/
+/*  background-position: left;*/
+/*  margin-top: 20px;*/
+/*  !*background-attachment: fixed;*!*/
+/*}*/
+
+.border-right {
+  height: inherit;
+  border-right: solid black 1px;
 }
