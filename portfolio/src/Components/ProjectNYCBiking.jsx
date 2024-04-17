@@ -1,4 +1,12 @@
+import QueryCarouselPopup from "./QueryCarouselPopup.jsx";
+import {useState} from "react"
+
 function ProjectNYCBiking() {
+    const [isShowing, setIsShowing] = useState(false)
+    const changeShowing = (newValue) => {
+        setIsShowing(newValue);
+    };
+
     return (<>
             <div className="portfolio-page global-style">
                 <div className="opaque-bg">
@@ -165,54 +173,23 @@ function ProjectNYCBiking() {
                                 <h5>Queries and Visualizations</h5>
                                 <p>
                                     Once I had set up my database, I was able to finally derive meaning from the data.
-                                    I built five queries to investigate the data and answer the business questions as
+                                    I wrote five queries to investigate the data and answer the business questions as
                                     shown in the images below.
                                 </p>
                                 <br/>
-
-                                <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
-                                    <div className="carousel-inner">
-                                        <div className="carousel-item active nyc-img-div" data-bs-interval="1000000">
-                                            <img src="../../src/assets/query1.png" className="d-block w-100" alt="..."/>
-                                        </div>
-                                        <div className="carousel-item nyc-img-div" data-bs-interval="1000000">
-                                            <img src="../../src/assets/query2.png" className="d-block w-100" alt="..."/>
-                                        </div>
-                                        <div className="carousel-item nyc-img-div" data-bs-interval="1000000">
-                                            <img src="../../src/assets/query3.png" className="d-block w-100" alt="..."/>
-                                        </div>
-                                        <div className="carousel-item nyc-img-div" data-bs-interval="1000000">
-                                            <img src="../../src/assets/query4.png" className="d-block w-100" alt="..."/>
-                                        </div>
-                                        <div className="carousel-item nyc-img-div" data-bs-interval="1000000">
-                                            <img src="../../src/assets/query5.png" className="d-block w-100"
-                                                 alt="..."/>
-                                        </div>
-                                    </div>
-                                    <button className="carousel-control-prev" type="button"
-                                            data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span className="visually-hidden">Previous</span>
-                                    </button>
-                                    <button className="carousel-control-next" type="button"
-                                            data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span className="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-
-                                {/*<div className="carousel-item">*/}
-                                {/*    <img src="../assets/query1.png" alt="data query 1"/>*/}
-                                {/*    <div className="carousel-caption d-none d-md-block">*/}
-                                {/*        <h5>q1 title</h5>*/}
-                                {/*        <p>q1 body text</p>*/}
-                                {/*    </div>*/}
-                                {/*</div>*/}
                             </div>
                         </div>
+                        <button onClick={() => {
+                            changeShowing(true)
+                        }}>CLICK ME
+                        </button>
                     </div>
                 </div>
             </div>
+
+            {/*<div className={(isShowing ? "test-class" : "test-class2")}>*/}
+            <QueryCarouselPopup isShowing={isShowing} setIsShowing={changeShowing}/>
+            {/*</div>*/}
         </>
     )
 }
