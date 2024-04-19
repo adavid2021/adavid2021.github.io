@@ -1,5 +1,5 @@
-import NFQPopup from "./NFQPopup.jsx";
 import {useState} from "react";
+import EnlargedImagePopup from "./EnlargedImagePopup.jsx";
 
 function ProjectCNRC() {
     // state variable of if NFQ popup showing
@@ -177,13 +177,13 @@ function ProjectCNRC() {
                                      className="contain-this-image hover-pointer"></img>
                                 <div className="enlarge-img-text"><strong>Click to enlarge</strong></div>
                             </div>
-                            {/*<div className="img-prediction-error" onClick={changeNFQShowing}></div>*/}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <NFQPopup isShowing={isNFQPopupShowing} setIsShowing={changeNFQShowing}/>
+        <EnlargedImagePopup isShowing={isNFQPopupShowing} setIsShowing={changeNFQShowing}
+                            imgSrc="../../src/assets/frequency.png"/>
     </>)
 }
 

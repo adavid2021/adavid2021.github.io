@@ -1,7 +1,7 @@
 import QueryCarouselPopup from "./QueryCarouselPopup.jsx";
-import ERDPopup from "./ERDPopup.jsx";
 import {useState} from "react"
 import VizCarouselPopup from "./VizCarouselPopup.jsx";
+import EnlargedImagePopup from "./EnlargedImagePopup.jsx";
 
 function ProjectNYCBiking() {
     // state variable of query popup showing
@@ -220,10 +220,6 @@ function ProjectNYCBiking() {
                                     </button>
                                 </div>
                                 <br/>
-                                <p>
-                                    Then, I visualized some data from the database to further
-                                    understand the data (click the "View Visualization Images" button to see them).
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -231,7 +227,8 @@ function ProjectNYCBiking() {
             </div>
             <VizCarouselPopup isShowing={isVizPopupShowing} setIsShowing={changeVizShowing}/>
             <QueryCarouselPopup isShowing={isQueryPopupShowing} setIsShowing={changeQueryShowing}/>
-            <ERDPopup isShowing={isERDPopupShowing} setIsShowing={changeERDShowing}/>
+            <EnlargedImagePopup isShowing={isERDPopupShowing} setIsShowing={changeERDShowing}
+                                imgSrc="../../src/assets/relation_db.png"/>
         </>
     )
 }

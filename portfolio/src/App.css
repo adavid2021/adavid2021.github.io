@@ -58,12 +58,17 @@
 }
 
 .navbar-brand {
-  font-weight: 500;
+  font-size: 27px;
   color: aliceblue;
 }
 
+/*.navbar-collapse {*/
+/*  background-color: black;*/
+/*}*/
+
 .nav-link {
   color: aliceblue;
+  font-size: 20px;
 }
 
 .no-opacity {
@@ -341,7 +346,7 @@
 .query-carousel-display-btn-div {
   width: 100%;
   display: flex;
-  justify-content: center;
+  /*justify-content: center;*/
   padding: 10px 0 10px 0;
 }
 
@@ -362,11 +367,8 @@
 }
 
 .carousel-inner {
-  padding: 3%;
+  padding: 10px 3% 10px 3%;
   height: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
 .my-carousel-class {
@@ -393,13 +395,15 @@
 }
 
 .popup-carousel-text {
+  height: 20%;
   width: 100%;
   color: black;
-  padding: 5px 0 0 0;
-}
-
-.nyc-img-div p{
-  text-align: center;
+  padding: 5px;
+  border: solid #4c5064 2px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  z-index: 15;
 }
 
 .carousel-control-prev {
@@ -462,7 +466,7 @@
 }
 
 .close-button-popup:hover {
-  opacity: 90%;
+  opacity: 1;
   cursor: pointer;
 }
 
@@ -492,6 +496,15 @@
   max-height: 100%; /* Ensure image doesn't exceed the container's height */
 }
 
+.contain-this-carousel-image {
+  padding: 0 0 5px 0;
+  width: 80%;
+  height: 80%;
+  object-fit: contain; /* This will ensure the image fits inside the container while maintaining its aspect ratio */
+  max-width: 80%; /* Ensure image doesn't exceed the container's width */
+  max-height: 80%; /* Ensure image doesn't exceed the container's height */
+}
+
 .hover-pointer:hover {
   cursor: pointer;
   animation: opacityLess-70 0.2s linear;
@@ -501,6 +514,18 @@
 .img-container {
   position: relative;
   display: inline-block;
+}
+
+.img-container-nba {
+  position: relative;
+  display: inline-block;
+  max-width: 75%;
+  color: black;
+}
+
+.img-description-container {
+  height: 100%;
+  width: 100%;
 }
 
 .enlarge-img-text {
@@ -521,4 +546,20 @@
   opacity: 1; /* Make text fully visible on hover */
   color: black;
   background: none;
+}
+
+.img-container-nba:hover .enlarge-img-text {
+  visibility: visible; /* Show text on hover */
+  animation: opacityMore-100 0.40s linear;
+  opacity: 1; /* Make text fully visible on hover */
+  color: black;
+  background: none;
+}
+
+.nba-name-text {
+  background-color: black;
+  /*opacity: 80%;*/
+  padding: 3px 0 3px 0;
+  border-radius: 4px;
+  color: black;
 }
