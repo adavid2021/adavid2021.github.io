@@ -1,4 +1,4 @@
-function QueryCarouselPopup(props) {
+function VizCarouselPopup(props) {
     const setIsShowing_ = (event) => {
         props.setIsShowing(event)
     }
@@ -7,51 +7,59 @@ function QueryCarouselPopup(props) {
             <div className={"popup-bg " + (props.isShowing ? "" : "hidden-div")}>
                 <div className="popup-inner">
                     <div className="carousel-outer-div">
-                        <div id="carouselExampleControls2" className="carousel my-carousel-class"
+                        <div id="carouselExampleControls" className="carousel my-carousel-class"
                              data-bs-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active nyc-img-div"
                                      data-bs-interval="1000000">
-                                    <img src="../../src/assets/query1.png"
+                                    <img src="../../src/assets/Viz1.png"
                                          alt="..." className="contain-this-image"/>
                                     <div className="popup-carousel-text">
-                                        <p>Cyclists injured from motor-vehicle-related collisions by borough</p>
+                                        <p>Most used Citi Bike stations</p>
                                     </div>
                                 </div>
                                 <div className="carousel-item nyc-img-div" data-bs-interval="1000000">
-                                    <img src="../../src/assets/query2.png" alt="..." className="contain-this-image"/>
+                                    <img src="../../src/assets/Viz2.png" alt="..." className="contain-this-image"/>
                                     <div className="popup-carousel-text">
-                                        <p>Cyclists injured from motor-vehicle-related collisions by month</p>
+                                        <p>Top 6 Most biked months of each year</p>
                                     </div>
                                 </div>
                                 <div className="carousel-item nyc-img-div" data-bs-interval="1000000">
-                                    <img src="../../src/assets/query3.png" alt="..." className="contain-this-image"/>
+                                    <img src="../../src/assets/Viz3.png" alt="..." className="contain-this-image"/>
                                     <div className="popup-carousel-text">
-                                        <p>Cyclists injured from motor-vehicle-related collisions by hour of day</p>
+                                        <p>Top 6 Most biked months of each year</p>
                                     </div>
                                 </div>
                                 <div className="carousel-item nyc-img-div" data-bs-interval="1000000">
-                                    <img src="../../src/assets/query4.png"
+                                    <img src="../../src/assets/Viz4.png"
                                          alt="..." className="contain-this-image"/>
                                     <div className="popup-carousel-text">
-                                        <p>Count of Citi Bike trips by trip start hour</p>
+                                        <p>Map of New York Boroughs</p>
                                     </div>
                                 </div>
                                 <div className="carousel-item nyc-img-div" data-bs-interval="1000000">
-                                    <img src="../../src/assets/query5.png"
+                                    <img src="../../src/assets/Viz5.png"
                                          alt="..." className="contain-this-image"/>
                                     <div className="popup-carousel-text">
-                                        <p>Citi Bike use (hours) by county</p>
+                                        <p>Symbol map of motor-vehicle accidents with injured cyclists in New York
+                                            City</p>
+                                    </div>
+                                </div>
+                                <div className="carousel-item nyc-img-div" data-bs-interval="1000000">
+                                    <img src="../../src/assets/Viz6.png"
+                                         alt="..." className="contain-this-image"/>
+                                    <div className="popup-carousel-text">
+                                        <p>Cyclist-motor-vehicle collisions in New York City by time of day</p>
                                     </div>
                                 </div>
                             </div>
                             <button className="carousel-control-prev" type="button"
-                                    data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span className="visually-hidden">Previous</span>
                             </button>
                             <button className="carousel-control-next" type="button"
-                                    data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="next">
                                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span className="visually-hidden">Next</span>
                             </button>
@@ -68,4 +76,4 @@ function QueryCarouselPopup(props) {
     )
 }
 
-export default QueryCarouselPopup
+export default VizCarouselPopup

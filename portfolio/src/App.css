@@ -39,6 +39,14 @@
 
 .navbar-toggler {
   background-color: white;
+  border: solid white 2px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .navbar-toggler-icon {
@@ -63,6 +71,10 @@
 }
 
 /** General Styling **/
+.underlined-text {
+  text-decoration: underline;
+}
+
 .opaque-bg {
   position: fixed;
   background-color: rgba(56, 56, 56, 0.3);
@@ -113,7 +125,7 @@
 .c-contact-a {
   width: 100%;
   height: 100%;
-  padding: 100px min(80px, 15%) 50px min(80px, 15%);
+  padding: 100px min(50px, 10%) 50px min(50px, 10%);
 }
 
 .c-contact-a h1 {
@@ -288,44 +300,78 @@
   background-size: contain;
   background-position: left;
   margin-top: 20px;
+
+  animation: opacityMore-70 0.2s linear;
+  opacity: 100%;
 }
 
-.img-rdb {
-  background-image: url(assets/relation_db.png);
+.img-prediction-error:hover {
+  cursor: pointer;
+  animation: opacityLess-70 0.2s linear;
+  opacity: 70%;
+}
 
-  position: relative;
+@keyframes opacityLess-70 {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 70%;
+  }
+}
+
+@keyframes opacityMore-70 {
+  0% {
+    opacity: 70%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes opacityMore-100 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.query-carousel-display-btn-div {
   width: 100%;
-  height: 500px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left;
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px 0;
+}
+
+.open-query-carousel-btn {
+  animation: opacityMore-70 0.2s linear;
+  opacity: 100%;
+}
+
+.open-query-carousel-btn:hover {
+  animation: opacityLess-70 0.2s linear;
+  opacity: 70%;
 }
 
 .carousel-outer-div {
   width: 100%;
   height: 100%;
-  padding: min(50px, 10vw) max(10px, 10vw) min(50px, 10vw) max(10px, 10vw);
-
-  /*padding: 25px max(10px, 10vw) 25px max(10px, 10vw);*/
-  /*!*width: 100%;*!*/
+  padding: min(30px, 7vw) max(10px, 7vw) min(30px, 7vw) max(10px, 7vw);
 }
 
 .carousel-inner {
+  padding: 3%;
   height: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-#carouselExampleControls {
+.my-carousel-class {
   height: 100%;
   width: 100%;
-  /*height: min(80vw, 100%);*/
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  /*justify-content: center; !* Horizontally center *!*/
-  /*align-items: center; !* Vertically center *!*/
 
   background-color: white;
   border: solid 5px white;
@@ -337,15 +383,23 @@
 }
 
 .nyc-img-div.active{
-  padding: 10%;
+  width: 100%;
+  height: 100%;
+  /*padding: 10%;*/
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.nyc-img-div img{
-  width: min(100%, 50vw);
+.popup-carousel-text {
+  width: 100%;
+  color: black;
+  padding: 5px 0 0 0;
+}
+
+.nyc-img-div p{
+  text-align: center;
 }
 
 .carousel-control-prev {
@@ -372,7 +426,6 @@
 }
 
 /*Popup Styling*/
-
 .popup-bg {
   position: absolute;
   top: 0;
@@ -380,9 +433,7 @@
   height: 100%;
   z-index: 150;
   background-color: rgba(0, 0, 0, 0.7);
-  /*background-color: black;*/
   color: white;
-  padding: 50px;
 }
 
 .popup-inner {
@@ -406,16 +457,68 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: white;
+  opacity: 70%;
+}
+
+.close-button-popup:hover {
+  opacity: 90%;
+  cursor: pointer;
 }
 
 #closeQCarousel {
   font-size: 40px;
-}
-
-#closeQCarousel:hover {
-  cursor: pointer;
+  color: black;
 }
 
 .hidden-div {
   display: none;
+}
+
+.popup-img-div {
+  width: 100%;
+  height: 100%;
+  padding: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contain-this-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* This will ensure the image fits inside the container while maintaining its aspect ratio */
+  max-width: 100%; /* Ensure image doesn't exceed the container's width */
+  max-height: 100%; /* Ensure image doesn't exceed the container's height */
+}
+
+.hover-pointer:hover {
+  cursor: pointer;
+  animation: opacityLess-70 0.2s linear;
+  opacity: 70%;
+}
+
+.img-container {
+  position: relative;
+  display: inline-block;
+}
+
+.enlarge-img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden; /* Initially hidden */
+  opacity: 0; /* Initially transparent */
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.img-container:hover .enlarge-img-text {
+  visibility: visible; /* Show text on hover */
+  animation: opacityMore-100 0.40s linear;
+  opacity: 1; /* Make text fully visible on hover */
+  color: black;
+  background: none;
 }

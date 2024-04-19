@@ -6,7 +6,7 @@ function NavBar() {
                     <a className="navbar-brand no-opacity" href="/home">Aidan David</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation" id="nav-toggler">
+                            aria-label="Toggle navigation" id="nav-toggler">
                         <i className="fa-solid fa-bars"></i>
                         {/*<span className="navbar-toggler-icon" style={{fontSize:20, color:"white"}}></span>*/}
                     </button>

@@ -1,4 +1,12 @@
+import NFQPopup from "./NFQPopup.jsx";
+import {useState} from "react";
+
 function ProjectCNRC() {
+    // state variable of if NFQ popup showing
+    const [isNFQPopupShowing, setIsNFQPopupShowing] = useState(false)
+    const changeNFQShowing = (newValue) => {
+        setIsNFQPopupShowing(newValue);
+    };
     return (<>
         <div className="portfolio-page global-style">
             <div className="opaque-bg">
@@ -81,7 +89,7 @@ function ProjectCNRC() {
                                 month). This left us with data from 118 participants.
                                 With the data preprocessed, I moved onto testing and modeling.
                             </p>
-                            <br/>
+                            <hr/>
                             <h5>Determining Important Factors for Nightmares</h5>
                             <p>
                                 Initially, I focused on hypothesis testing which I conducted utilizing
@@ -93,7 +101,7 @@ function ProjectCNRC() {
                                 the day-time
                                 effects they have on a person experiencing them.
                             </p>
-                            <br/>
+                            <hr/>
                             <h5>Using the Survey Data to Predict Nightmares</h5>
                             <p>
                                 We used select cognitive measures to predict nightmare
@@ -163,12 +171,19 @@ function ProjectCNRC() {
                                 been a normal distribution of prediction error. This was most likely
                                 due to an insufficient number of implemented relationships between input variables.
                             </p>
-                            <div className="img-prediction-error"></div>
+                            <br/>
+                            <div className="img-container">
+                                <img src="../../src/assets/frequency.png" onClick={changeNFQShowing}
+                                     className="contain-this-image hover-pointer"></img>
+                                <div className="enlarge-img-text"><strong>Click to enlarge</strong></div>
+                            </div>
+                            {/*<div className="img-prediction-error" onClick={changeNFQShowing}></div>*/}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <NFQPopup isShowing={isNFQPopupShowing} setIsShowing={changeNFQShowing}/>
     </>)
 }
 

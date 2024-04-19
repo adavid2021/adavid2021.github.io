@@ -1,10 +1,25 @@
 import QueryCarouselPopup from "./QueryCarouselPopup.jsx";
+import ERDPopup from "./ERDPopup.jsx";
 import {useState} from "react"
+import VizCarouselPopup from "./VizCarouselPopup.jsx";
 
 function ProjectNYCBiking() {
-    const [isShowing, setIsShowing] = useState(false)
-    const changeShowing = (newValue) => {
-        setIsShowing(newValue);
+    // state variable of query popup showing
+    const [isQueryPopupShowing, setIsQueryPopupShowing] = useState(false)
+    const changeQueryShowing = (newValue) => {
+        setIsQueryPopupShowing(newValue);
+    };
+
+    // state variable of if ERD popup showing
+    const [isERDPopupShowing, setIsERDPopupShowing] = useState(false)
+    const changeERDShowing = (newValue) => {
+        setIsERDPopupShowing(newValue);
+    };
+
+    // state variable of query popup showing
+    const [isVizPopupShowing, setIsVizPopupShowing] = useState(false)
+    const changeVizShowing = (newValue) => {
+        setIsVizPopupShowing(newValue);
     };
 
     return (<>
@@ -83,7 +98,8 @@ function ProjectNYCBiking() {
                             <div className="project-lower-band">
                                 <h5>Project Overview</h5>
                                 <p>For this project, I used the <a
-                                    href="https://www.kaggle.com/datasets/nycopendata/new-York" target={"_blank"}>
+                                    href="https://www.kaggle.com/datasets/nycopendata/new-York" target={"_blank"}
+                                    className="underlined-text">
                                     NYC Open Data dataset
                                 </a> from Kaggle. This data included Citi Bike rental data, motor vehicle collision
                                     data,
@@ -91,7 +107,7 @@ function ProjectNYCBiking() {
                                     popular
                                     mode of transportation which with the city's high population density make
                                     cyclist collisions more common than in other U.S. cities.</p>
-                                <br/>
+                                <hr/>
                                 <h5>Business Questions</h5>
                                 <p>
                                     My two business questions were focused on when and where cyclist collisions happened
@@ -104,6 +120,7 @@ function ProjectNYCBiking() {
                                     <li>When and where is cycling most dangerous in New York City?</li>
                                     <li>When and where are Citi Bikes most used?</li>
                                 </ul>
+                                <hr/>
                                 <h5>Designing a Relational Database</h5>
                                 <p>
                                     To answer these business questions, I needed to combine several tables. The three
@@ -131,7 +148,14 @@ function ProjectNYCBiking() {
                                     <li>Collision Fact Table</li>
                                     <li>Station Use Fact Table</li>
                                 </ul>
-                                <div className="img-rdb"></div>
+                                <br/>
+                                <div className="img-container">
+                                    <img src="../../src/assets/relation_db.png" onClick={changeERDShowing}
+                                         className="hover-pointer contain-this-image"></img>
+                                    <div className="enlarge-img-text"><strong>Click to enlarge</strong></div>
+                                </div>
+
+                                <br/>
                                 <br/>
                                 <p>
                                     I also documented which slowly changing dimension (SCD) each dimension would need
@@ -172,24 +196,42 @@ function ProjectNYCBiking() {
                                 <br/>
                                 <h5>Queries and Visualizations</h5>
                                 <p>
-                                    Once I had set up my database, I was able to finally derive meaning from the data.
-                                    I wrote five queries to investigate the data and answer the business questions as
-                                    shown in the images below.
+                                    Once I finished setting up my PostgreSQL database, I was able to finally derive
+                                    meaning from
+                                    the data.
+                                    I wrote five queries to investigate the data and answer the business questions
+                                    (click the "View Query Images" button to see them).
                                 </p>
+                                <div className={"query-carousel-display-btn-div"}>
+                                    <button onClick={() => {
+                                        changeQueryShowing(true)
+                                    }} className={"open-query-carousel-btn"}>View Query Images
+                                    </button>
+                                </div>
                                 <br/>
+                                <p>
+                                    Then, I visualized some data from the database to further
+                                    understand the data (click the "View Visualization Images" button to see them).
+                                </p>
+                                <div className={"query-carousel-display-btn-div"}>
+                                    <button onClick={() => {
+                                        changeVizShowing(true)
+                                    }} className={"open-query-carousel-btn"}>View Visualization Images
+                                    </button>
+                                </div>
+                                <br/>
+                                <p>
+                                    Then, I visualized some data from the database to further
+                                    understand the data (click the "View Visualization Images" button to see them).
+                                </p>
                             </div>
                         </div>
-                        <button onClick={() => {
-                            changeShowing(true)
-                        }}>CLICK ME
-                        </button>
                     </div>
                 </div>
             </div>
-
-            {/*<div className={(isShowing ? "test-class" : "test-class2")}>*/}
-            <QueryCarouselPopup isShowing={isShowing} setIsShowing={changeShowing}/>
-            {/*</div>*/}
+            <VizCarouselPopup isShowing={isVizPopupShowing} setIsShowing={changeVizShowing}/>
+            <QueryCarouselPopup isShowing={isQueryPopupShowing} setIsShowing={changeQueryShowing}/>
+            <ERDPopup isShowing={isERDPopupShowing} setIsShowing={changeERDShowing}/>
         </>
     )
 }
