@@ -68,7 +68,7 @@ function ProjectNYCBiking() {
                                     <b>General:</b>
                                     <br/>
                                     <p>
-                                        I communicated findings to my piers and teachers through presentations and
+                                        I communicated findings to my peers and teachers through presentations and
                                         documentation.
                                     </p>
                                 </div>
@@ -149,9 +149,9 @@ function ProjectNYCBiking() {
                                     <li>Station Use Fact Table</li>
                                 </ul>
                                 <br/>
-                                <div className="img-container">
-                                    <img src="../../src/assets/relation_db.png" onClick={changeERDShowing}
-                                         className="hover-pointer contain-this-image"></img>
+                                <div className="img-container hover-pointer" onClick={changeERDShowing}>
+                                    <img src="../../src/assets/relation_db.png"
+                                         className="contain-this-image"></img>
                                     <div className="enlarge-img-text"><strong>Click to enlarge</strong></div>
                                 </div>
 

@@ -8,6 +8,7 @@ import Contact from "./Components/Contact.jsx";
 import ProjectCNRC from "./Components/ProjectCNRC.jsx";
 import ProjectNYCBiking from "./Components/ProjectNYCBiking.jsx";
 import ProjectNBATwitter from "./Components/ProjectNBATwitter.jsx";
+import ProjectJourneys from "./Components/ProjectJourneys.jsx";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -25,6 +26,7 @@ function App() {
                   <Route path="/project_cnrc" element={<ProjectCNRC/>}/>
                   <Route path="/project_nyc_biking" element={<ProjectNYCBiking/>}/>
                   <Route path="/project_nba_twitter" element={<ProjectNBATwitter/>}/>
+                  <Route path="/project_journeys" element={<ProjectJourneys/>}/>
               </Routes>
           </BrowserRouter>
       </>

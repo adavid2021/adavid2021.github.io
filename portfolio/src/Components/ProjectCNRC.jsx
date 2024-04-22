@@ -172,9 +172,9 @@ function ProjectCNRC() {
                                 due to an insufficient number of implemented relationships between input variables.
                             </p>
                             <br/>
-                            <div className="img-container">
-                                <img src="../../src/assets/frequency.png" onClick={changeNFQShowing}
-                                     className="contain-this-image hover-pointer"></img>
+                            <div className="img-container hover-pointer" onClick={changeNFQShowing}>
+                                <img src="../../src/assets/frequency.png"
+                                     className="contain-this-image"></img>
                                 <div className="enlarge-img-text"><strong>Click to enlarge</strong></div>
                             </div>
                         </div>
