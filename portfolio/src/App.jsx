@@ -9,10 +9,9 @@ import ProjectCNRC from "./Components/ProjectCNRC.jsx";
 import ProjectNYCBiking from "./Components/ProjectNYCBiking.jsx";
 import ProjectNBATwitter from "./Components/ProjectNBATwitter.jsx";
 import ProjectJourneys from "./Components/ProjectJourneys.jsx";
+import ProjectNBAStats from "./Components/ProjectNBAStats.jsx";
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
       <>
           <NavBar/>
@@ -27,6 +26,7 @@ function App() {
                   <Route path="/project_nyc_biking" element={<ProjectNYCBiking/>}/>
                   <Route path="/project_nba_twitter" element={<ProjectNBATwitter/>}/>
                   <Route path="/project_journeys" element={<ProjectJourneys/>}/>
+                  <Route path="/project_nba_stats" element={<ProjectNBAStats/>}/>
               </Routes>
           </BrowserRouter>
       </>

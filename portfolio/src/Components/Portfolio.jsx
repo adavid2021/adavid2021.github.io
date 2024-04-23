@@ -6,6 +6,7 @@ function Portfolio() {
     const cyclistVisualizationBody = "Which New York boroughs are the most dangerous for bikers and why?"
     const nbaBody = "How are followers of Lebron James, Stephen Curry, Giannis Antetokounmpo and Jayson Tatum connected on Twitter?"
     const journeyBody = "One of the first websites I developed. It visualizes career paths for employees of a client company."
+    const statBody = "What determines how effective an NBA player is on the court?"
 
     return (
         <>
@@ -32,6 +33,13 @@ function Portfolio() {
                                                portfolioLink="/project_nba_twitter"/>
                             </div>
 
+                            <div className="c-portfolio-b">
+                                <PortfolioItem titleText="Quantifying NBA Player Impact"
+                                               bodyText={statBody}
+                                               portfolioLink="/project_nba_stats"/>
+                            </div>
+                        </div>
+                        <div className="r-portfolio">
                             <div className="c-portfolio-b">
                                 <PortfolioItem titleText="Journeys: A Career Navigation Website"
                                                bodyText={journeyBody}
