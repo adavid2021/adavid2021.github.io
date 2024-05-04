@@ -202,22 +202,23 @@ function ProjectNYCBiking() {
                                     I wrote five queries to investigate the data and answer the business questions
                                     (click the "View Query Images" button to see them).
                                 </p>
-                                <div className={"query-carousel-display-btn-div"}>
-                                    <button onClick={() => {
-                                        changeQueryShowing(true)
-                                    }} className={"open-query-carousel-btn"}>View Query Images
-                                    </button>
+                                <br/>
+                                <div className="img-container hover-pointer" onClick={changeQueryShowing}>
+                                    <img src="../../src/assets/query1.png"
+                                         className="contain-this-image"></img>
+                                    <div className="enlarge-img-text"><strong>Click to see queries</strong></div>
                                 </div>
+                                <br/>
                                 <br/>
                                 <p>
                                     Then, I visualized some data from the database to further
                                     understand the data (click the "View Visualization Images" button to see them).
                                 </p>
-                                <div className={"query-carousel-display-btn-div"}>
-                                    <button onClick={() => {
-                                        changeVizShowing(true)
-                                    }} className={"open-query-carousel-btn"}>View Visualization Images
-                                    </button>
+                                <br/>
+                                <div className="img-container hover-pointer" onClick={changeVizShowing}>
+                                    <img src="../../src/assets/Viz6.png"
+                                         className="contain-this-image"></img>
+                                    <div className="enlarge-img-text"><strong>Click to see visualizations</strong></div>
                                 </div>
                                 <br/>
                             </div>
