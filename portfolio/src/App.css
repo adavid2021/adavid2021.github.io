@@ -212,13 +212,25 @@
   flex-direction: row;
 }
 
-.c-about-half {
-  width: 50%;
+.c-about-threefourths {
+  width: 75%;
   padding: 0 10px 0 10px;
+}
+
+.c-about-onefourth {
+  width: 25%;
+  padding: 0 10px 0 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-img-banner {
   width: 100%;
+}
+
+.about-img-face {
+  width: 100%;
+  max-width: 367px;
 }
 
 .white-text {

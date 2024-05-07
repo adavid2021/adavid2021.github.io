@@ -19,7 +19,7 @@ function About() {
                             </h5>
                             <br/>
                             <div className="c-about-upper">
-                                <div className="c-about-half">
+                                <div className="c-about-threefourths">
                                     <h6>
                                         I am a data analyst and software engineer working in Boston and Greater
                                         Boston Massachusetts. I have a Master's degree in Applied Data Analytics
@@ -52,14 +52,8 @@ function About() {
                                         with me, reach out to me by email (ajdavid@bu.edu).
                                     </h6>
                                 </div>
-                                <div className="c-about-half">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolores esse
-                                    facilis
-                                    fuga
-                                    harum, molestiae recusandae. A ad, adipisci assumenda exercitationem incidunt
-                                    itaque
-                                    maxime
-                                    nemo, nulla odit sint voluptate voluptatibus?
+                                <div className="c-about-onefourth">
+                                    <img src="../../src/assets/headshotIMG_2.png" className="about-img-face"/>
                                 </div>
                             </div>
                             <hr/>
