@@ -1,3 +1,7 @@
-# Portfolio Website
+# My Personal Website
 
-This is my portfolio website showcasing my projects as a data analyst, research technician and software developer. I developed it using React, HTML and CSS.
+This is a website displaying some projects I've worked on as a data analyst and software engineer.
+
+I coded everything natively with React.
+
+Run by entering the portfolio directory and entering the command "npm run dev" or "npm run build"
