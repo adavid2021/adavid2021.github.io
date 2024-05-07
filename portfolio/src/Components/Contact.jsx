@@ -3,7 +3,7 @@ function Contact() {
         <>
             <div className="contact-page global-style">
                 <div className="opaque-bg">
-                    <div className="c-contact-a">
+                    <div className="c-contact-og">
                         <h1>Contact</h1>
                         <h4>Aidan David</h4>
                         <h4>ajdavid@bu.edu</h4>

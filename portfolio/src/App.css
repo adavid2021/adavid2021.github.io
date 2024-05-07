@@ -5,7 +5,7 @@
   width: 100%; /* Set the width to 100% of the viewport width */
   height: 100%; /* Set the height to 100% of the viewport height */
 
-  background-image: url(pawel-czerwinski-prMn9KINLtI-unsplash.jpg);
+  background-image: url(assets/pawel-czerwinski-prMn9KINLtI-unsplash.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -37,12 +37,38 @@
   font-weight: 500;
 }
 
+.navbar-toggler {
+  background-color: white;
+  border: solid white 2px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
 .navigation-bar {
   width: 100%;
 }
 
 .navbar-brand {
-  font-weight: 500;
+  font-size: 27px;
+  color: aliceblue;
+}
+
+/*.navbar-collapse {*/
+/*  background-color: black;*/
+/*}*/
+
+.nav-link {
+  color: aliceblue;
+  font-size: 20px;
 }
 
 .no-opacity {
@@ -50,12 +76,21 @@
 }
 
 /** General Styling **/
+.underlined-text {
+  text-decoration: underline;
+}
+
 .opaque-bg {
-  position: relative;
+  position: fixed;
   background-color: rgba(56, 56, 56, 0.3);
   z-index: 2;
   width: 100%;
   height: 100%;
+}
+
+.scrollable-div {
+  height: auto;
+  overflow-y: scroll;
 }
 
 .center-text-box {
@@ -92,10 +127,20 @@
   z-index: 2;
 }
 
-.c-contact-a {
+.c-contact-og {
   width: 100%;
   height: 100%;
-  padding: 100px min(80px, 15%) 50px min(80px, 15%);
+  padding: 100px min(50px, 10%) 50px min(50px, 10%);
+}
+
+.c-contact-og h1 {
+  border-bottom: 1px solid #f9f9f9;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.c-contact-og h4 {
+  margin-bottom: 5px;
 }
 
 .c-contact-a h1 {
@@ -141,6 +186,67 @@
   color: #7c92e8;
 }
 
+/** About Me Page **/
+.dark-background {
+  background-color: rgba(25, 25, 25, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.about-page {
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.c-about-a {
+  padding: 50px min(50px, 10%) 100px min(50px, 10%);
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.c-about-a h1 {
+  border-bottom: 1px solid #f9f9f9;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.c-about-a h5 h6{
+  padding: 0 10px 0 10px;
+}
+
+.c-about-upper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.c-about-threefourths {
+  width: 75%;
+  padding: 0 10px 0 10px;
+}
+
+.c-about-onefourth {
+  width: 25%;
+  padding: 0 10px 0 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-img-banner {
+  width: 100%;
+}
+
+.about-img-face {
+  width: 100%;
+  max-width: 367px;
+}
+
+.white-text {
+  color: white;
+}
+
 /** Portfolio Page **/
 .portfolio-page {
   position: fixed;
@@ -149,6 +255,13 @@
   height: 100%;
   width: 100%;
   z-index: 2;
+}
+
+.r-portfolio {
+  width: 100%;
+  /*height: 100%;*/
+  display: flex;
+  flex-direction: row;
 }
 
 .c-portfolio-a {
@@ -162,12 +275,16 @@
 .c-portfolio-b {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  padding: 20px 0 20px 0;
+  flex-direction: column;
+  /*padding: 20px 0 20px 0;*/
+  padding: 20px;
+  align-items: center;
 }
 
 .pi {
   transition: border 0.3s ease, background-color 0.3s ease;
+  padding: 10px;
+  color: black;
 }
 
 .pi:hover {
@@ -195,9 +312,11 @@
   background-color: #D7EAFFFF;
   color: black;
   border-radius: 5px;
+  line-height: 1.25;
 }
 .project-title {
-  padding: 10px;
+  padding: 20px 10px 20px 10px;
+  text-align: center;
 }
 
 .project-upper-band {
@@ -206,18 +325,324 @@
   flex-direction: row;
   border-top: solid black 2px;
   border-bottom: solid black 2px;
-  background-color: #D7EAFFFF;
+  background-color: #b7d7ff;
 }
 
 .project-upper-band-item {
   width: 100%;
   height: 100%;
-  padding: 15px;
-  /*border-left: solid black 1px;*/
-  /*border-right: solid black 1px;*/
-
+  padding: 25px;
 }
 
-.project-lower-band-item {
-  padding: 15px;
+.project-upper-band-item b{
+    margin-bottom: 50px;
+}
+
+.project-upper-band li{
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+    .project-upper-band {
+        flex-direction: column;
+    }
+    .project-upper-band-item {
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    .upper-padding {
+      padding-top: 20px;
+    }
+    .lower-padding {
+      padding-bottom: 20px;
+    }
+}
+
+.project-lower-band {
+  padding: 25px max(25px, 10%) 25px max(25px, 10%);
+}
+
+.project-lower-band li{
+  margin-bottom: 3px;
+}
+
+.project-lower-band ul{
+    margin: 10px 0 15px 0;
+}
+
+.project-bg b{
+  font-weight: 600;
+}
+
+.img-prediction-error {
+  background-image: url(assets/frequency.png);
+
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  margin-top: 20px;
+
+  animation: opacityMore-70 0.2s linear;
+  opacity: 100%;
+}
+
+.img-prediction-error:hover {
+  cursor: pointer;
+  animation: opacityLess-70 0.2s linear;
+  opacity: 70%;
+}
+
+@keyframes opacityLess-70 {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 70%;
+  }
+}
+
+@keyframes opacityMore-70 {
+  0% {
+    opacity: 70%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes opacityMore-100 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.query-carousel-display-btn-div {
+  width: 100%;
+  display: flex;
+  /*justify-content: center;*/
+  padding: 10px 0 10px 0;
+}
+
+.open-query-carousel-btn {
+  animation: opacityMore-70 0.2s linear;
+  opacity: 100%;
+}
+
+.open-query-carousel-btn:hover {
+  animation: opacityLess-70 0.2s linear;
+  opacity: 70%;
+}
+
+.carousel-outer-div {
+  width: 100%;
+  height: 100%;
+  padding: min(30px, 7vw) max(10px, 7vw) min(30px, 7vw) max(10px, 7vw);
+}
+
+.carousel-inner {
+  padding: 10px 3% 10px 3%;
+  height: 100%;
+}
+
+.my-carousel-class {
+  height: 100%;
+  width: 100%;
+
+  background-color: white;
+  border: solid 5px white;
+  border-radius: 5px;
+}
+
+.nyc-img-div {
+  display: none;
+}
+
+.nyc-img-div.active{
+  width: 100%;
+  height: 100%;
+  /*padding: 10%;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-carousel-text {
+  height: 20%;
+  width: 100%;
+  color: black;
+  padding: 5px;
+  border: solid #4c5064 2px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  z-index: 15;
+}
+
+.carousel-control-prev {
+  justify-content: left;
+}
+
+.carousel-control-next {
+  justify-content: right;
+}
+
+.carousel-control-prev-icon {
+  border-radius: 8px;
+  background-color: black;
+}
+
+.carousel-control-next-icon {
+  border-radius: 8px;
+  background-color: black;
+}
+
+.border-right {
+  height: inherit;
+  border-right: solid black 1px;
+}
+
+/*Popup Styling*/
+.popup-bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 150;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.popup-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.close-button-popup {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border: solid black 2px;
+  border-radius: 5px;
+  position: absolute;
+  top:10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  opacity: 70%;
+}
+
+.close-button-popup:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#closeQCarousel {
+  font-size: 40px;
+  color: black;
+}
+
+.hidden-div {
+  display: none;
+}
+
+.popup-img-div {
+  width: 100%;
+  height: 100%;
+  padding: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contain-this-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* This will ensure the image fits inside the container while maintaining its aspect ratio */
+  max-width: 100%; /* Ensure image doesn't exceed the container's width */
+  max-height: 100%; /* Ensure image doesn't exceed the container's height */
+}
+
+.contain-this-carousel-image {
+  padding: 0 0 5px 0;
+  width: 80%;
+  height: 80%;
+  object-fit: contain; /* This will ensure the image fits inside the container while maintaining its aspect ratio */
+  max-width: 80%; /* Ensure image doesn't exceed the container's width */
+  max-height: 80%; /* Ensure image doesn't exceed the container's height */
+}
+
+.hover-pointer:hover {
+  cursor: pointer;
+  animation: opacityLess-70 0.2s linear;
+  opacity: 70%;
+}
+
+.img-container {
+  position: relative;
+  display: inline-block;
+}
+
+.img-container-nba {
+  position: relative;
+  display: inline-block;
+  max-width: 75%;
+  color: black;
+}
+
+.img-description-container {
+  height: 100%;
+  width: 100%;
+}
+
+.enlarge-img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden; /* Initially hidden */
+  opacity: 0; /* Initially transparent */
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.enlarge-img-text strong {
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+.img-container:hover .enlarge-img-text {
+  visibility: visible; /* Show text on hover */
+  animation: opacityMore-100 0.40s linear;
+  opacity: 1; /* Make text fully visible on hover */
+  color: black;
+  background: none;
+}
+
+.img-container-nba:hover .enlarge-img-text {
+  visibility: visible; /* Show text on hover */
+  animation: opacityMore-100 0.40s linear;
+  opacity: 1; /* Make text fully visible on hover */
+  color: black;
+  background: none;
+}
+
+.nba-name-text {
+  background-color: black;
+  /*opacity: 80%;*/
+  padding: 3px 0 3px 0;
+  border-radius: 4px;
+  color: black;
 }
