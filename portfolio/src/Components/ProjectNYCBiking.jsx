@@ -25,7 +25,7 @@ function ProjectNYCBiking() {
     return (<>
             <div className="portfolio-page global-style">
                 <div className="opaque-bg">
-                    <div className="c-contact-a scrollable-div">
+                    <div className="c-contact-og scrollable-div">
                         <div className="project-bg">
                             <div className="project-title">
                                 <h3>Visualizing NYC Cyclist-Motor Vehicle Accidents</h3>

@@ -12,7 +12,7 @@ function Portfolio() {
         <>
             <div className="portfolio-page global-style">
                 <div className="opaque-bg">
-                    <div className="c-contact-a scrollable-div">
+                    <div className="c-contact-og scrollable-div">
                         <div className="r-portfolio">
                             <div className="c-portfolio-b">
                                 <PortfolioItem titleText="Predicting Nightmares with Machine Learning"
