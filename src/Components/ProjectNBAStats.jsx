@@ -60,8 +60,8 @@ function ProjectNBAStats() {
                             <div className="project-lower-band">
                                 <h5>Project Overview</h5>
                                 <p>
-                                    Using data from the NBA's <a
-                                    href="https://www.nba.com/stats/players/traditional/?sort=PLUS_MINUS&dir=-1&Season=2021-22&SeasonType=Regular%20Season&PerMode=Totals">NBA's
+                                    Using data from the <a
+                                    href="https://www.nba.com/stats/players/traditional/?sort=PLUS_MINUS&dir=-1&Season=2021-22&SeasonType=Regular%20Season&PerMode=Totals" target="_blank">NBA's
                                     2021-2022 season player statistics</a>, I wanted to see if I
                                     could predict a player's impact on their team's success when they are on the court.
                                     When making the dataset, I saved data from each of the player rows such that each
