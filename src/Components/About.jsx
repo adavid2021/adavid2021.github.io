@@ -53,7 +53,7 @@ function About() {
                                     </h6>
                                 </div>
                                 <div className="c-about-onefourth">
-                                    <img src="./../../src/assets/headshotIMG_2.png" className="about-img-face"/>
+                                    <img src="./headshotIMG_2.png" className="about-img-face"/>
                                 </div>
                             </div>
                             <hr/>
@@ -63,7 +63,7 @@ function About() {
                                 origami, practicing guitar, and playing video games.
                             </h6>
                             <div className="img-container hover-pointer" onClick={changeLeisureShowing}>
-                                <img src="./../../src/assets/dresser_img.jpg"
+                                <img src="./dresser_img.jpg"
                                      className="contain-this-image"></img>
                                 <div className="enlarge-img-text"><strong className="white-text">Click to
                                     enlarge</strong></div>

@@ -5,7 +5,7 @@
   width: 100%; /* Set the width to 100% of the viewport width */
   height: 100%; /* Set the height to 100% of the viewport height */
 
-  background-image: url(assets/pawel-czerwinski-prMn9KINLtI-unsplash.jpg);
+  background-image: url(../public/pawel-czerwinski-prMn9KINLtI-unsplash.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -375,7 +375,7 @@
 }
 
 .img-prediction-error {
-  background-image: url(assets/frequency.png);
+  background-image: url(../public/frequency.png);
 
   position: relative;
   width: 100%;

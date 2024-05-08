@@ -91,7 +91,7 @@ function ProjectNBATwitter() {
                                 </p>
                                 <br/>
                                 <div className="img-container-nba">
-                                    <img src="../../src/assets/nba_graph.png" onClick={changeNBAShowing}
+                                    <img src="../../public/nba_graph.png" onClick={changeNBAShowing}
                                          className="hover-pointer contain-this-image"></img>
                                     <div className="enlarge-img-text"><strong>Click to enlarge</strong></div>
                                 </div>
@@ -120,7 +120,7 @@ function ProjectNBATwitter() {
                                     below representing bigrams of more than one frequency:</p>
                                 <br/>
                                 <div className="img-container-nba">
-                                    <img src="../../src/assets/ncaa_graph.png" onClick={changeNCAAShowing}
+                                    <img src="../../public/ncaa_graph.png" onClick={changeNCAAShowing}
                                          className="hover-pointer contain-this-image"></img>
                                     <div className="enlarge-img-text"><strong>Click to enlarge</strong></div>
                                 </div>

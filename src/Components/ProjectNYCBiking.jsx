@@ -150,7 +150,7 @@ function ProjectNYCBiking() {
                                 </ul>
                                 <br/>
                                 <div className="img-container hover-pointer" onClick={changeERDShowing}>
-                                    <img src="../../src/assets/relation_db.png"
+                                    <img src="../../public/relation_db.png"
                                          className="contain-this-image"></img>
                                     <div className="enlarge-img-text"><strong>Click to enlarge</strong></div>
                                 </div>
@@ -204,7 +204,7 @@ function ProjectNYCBiking() {
                                 </p>
                                 <br/>
                                 <div className="img-container hover-pointer" onClick={changeQueryShowing}>
-                                    <img src="../../src/assets/query1.png"
+                                    <img src="../../public/query1.png"
                                          className="contain-this-image"></img>
                                     <div className="enlarge-img-text"><strong>Click to see queries</strong></div>
                                 </div>
@@ -216,7 +216,7 @@ function ProjectNYCBiking() {
                                 </p>
                                 <br/>
                                 <div className="img-container hover-pointer" onClick={changeVizShowing}>
-                                    <img src="../../src/assets/Viz6.png"
+                                    <img src="../../public/Viz6.png"
                                          className="contain-this-image"></img>
                                     <div className="enlarge-img-text"><strong>Click to see visualizations</strong></div>
                                 </div>

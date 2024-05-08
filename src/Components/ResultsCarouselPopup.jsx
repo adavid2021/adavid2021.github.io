@@ -11,7 +11,7 @@ function ResultsCarouselPopup(props) {
                              data-bs-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active nyc-img-div" data-bs-interval="1000000">
-                                    <img src="../../src/assets/stats3.png" alt="..."
+                                    <img src="../../public/stats3.png" alt="..."
                                          className="contain-this-carousel-image"/>
                                     <div className="popup-carousel-text">
                                         <h6>Coefficient Values and General Model Summary</h6>
@@ -27,7 +27,7 @@ function ResultsCarouselPopup(props) {
                                     </div>
                                 </div>
                                 <div className="carousel-item nyc-img-div" data-bs-interval="1000000">
-                                    <img src="../../src/assets/stats4.png" alt="..."
+                                    <img src="../../public/stats4.png" alt="..."
                                          className="contain-this-carousel-image"/>
                                     <div className="popup-carousel-text">
                                         <h6>Residual Graph</h6>
@@ -43,7 +43,7 @@ function ResultsCarouselPopup(props) {
                                     </div>
                                 </div>
                                 <div className="carousel-item nyc-img-div" data-bs-interval="1000000">
-                                    <img src="../../src/assets/stats5.png" alt="..."
+                                    <img src="../../public/stats5.png" alt="..."
                                          className="contain-this-carousel-image"/>
                                     <div className="popup-carousel-text">
                                         <h6>Residual Histogram</h6>

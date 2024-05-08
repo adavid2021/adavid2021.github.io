@@ -79,7 +79,7 @@ function ProjectJourneys() {
                                 </p>
                                 <br/>
                                 <div className="img-container hover-pointer" onClick={changeQuestShowing}>
-                                    <img src="../../src/assets/questionnaire1.png"
+                                    <img src="../../public/questionnaire1.png"
                                          className="contain-this-image"></img>
                                     <div className="enlarge-img-text"><strong>Click for more details</strong></div>
                                 </div>
@@ -101,7 +101,7 @@ function ProjectJourneys() {
                                 </p>
                                 <br/>
                                 <div className="img-container hover-pointer" onClick={changePathShowing}>
-                                    <img src="../../src/assets/path1.png"
+                                    <img src="../../public/path1.png"
                                          className="contain-this-image"></img>
                                     <div className="enlarge-img-text"><strong>Click for more details</strong></div>
                                 </div>
@@ -118,7 +118,7 @@ function ProjectJourneys() {
                                 </p>
                                 <br/>
                                 <div className="img-container hover-pointer" onClick={changeJourneyShowing}>
-                                    <img src="../../src/assets/journey1.png"
+                                    <img src="../../public/journey1.png"
                                          className="contain-this-image"></img>
                                     <div className="enlarge-img-text"><strong>Click for more details</strong></div>
                                 </div>

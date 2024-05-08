@@ -54,7 +54,7 @@ function ProjectNBAStats() {
                                         can have.
                                     </p>
                                     <br/>
-                                    <a href="../../src/assets/DAVID-TERM_PROJECT.pdf" target="_blank">full research paper link</a>
+                                    <a href="../../public/DAVID-TERM_PROJECT.pdf" target="_blank">full research paper link</a>
                                 </div>
                             </div>
                             <div className="project-lower-band">
@@ -95,7 +95,7 @@ function ProjectNBAStats() {
                                 </p>
                                 <br/>
                                 <div className="img-container hover-pointer" onClick={changeOutlierShowing}>
-                                    <img src="../../src/assets/stats1.png"
+                                    <img src="../../public/stats1.png"
                                          className="contain-this-image"></img>
                                     <div className="enlarge-img-text"><strong>Click to enlarge</strong></div>
                                 </div>
@@ -111,7 +111,7 @@ function ProjectNBAStats() {
                                 </p>
                                 <br/>
                                 <div className="img-container hover-pointer" onClick={changeResultsShowing}>
-                                    <img src="../../src/assets/stats3.png"
+                                    <img src="../../public/stats3.png"
                                          className="contain-this-image"></img>
                                     <div className="enlarge-img-text"><strong>Click for more info</strong></div>
                                 </div>
