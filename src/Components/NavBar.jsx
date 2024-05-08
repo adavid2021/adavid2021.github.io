@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 function NavBar() {
     return (
         <>
@@ -18,19 +20,23 @@ function NavBar() {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/home" id="nav-hover">Home</a>
+                                <Link to="/" className="nav-link active" id="nav-hover">Home</Link>
+                                {/*<a className="nav-link active" aria-current="page" href="/home" id="nav-hover">Home</a>*/}
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/portfolio"
-                                   id="nav-hover">Portfolio</a>
+                                <Link to="/portfolio" className="nav-link" id="nav-hover">Portfolio</Link>
+                                {/*<a className="nav-link active" aria-current="page" href="/portfolio"*/}
+                                {/*   id="nav-hover">Portfolio</a>*/}
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/contact"
-                                   id="nav-hover">Contact</a>
+                                <Link to="/contact" className="nav-link" id="nav-hover">Contact</Link>
+                                {/*<a className="nav-link active" aria-current="page" href="/contact"*/}
+                                {/*   id="nav-hover">Contact</a>*/}
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/about" id="nav-hover">About
-                                    Me</a>
+                                <Link to="/about" className="nav-link" id="nav-hover">About</Link>
+                                {/*<a className="nav-link active" aria-current="page" href="/about" id="nav-hover">About*/}
+                                {/*    Me</a>*/}
                             </li>
                         </ul>
                     </div>

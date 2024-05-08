@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 function PortfolioItem(props) {
     const goToProject = () => {
         // '/another-page.html'
@@ -5,14 +7,22 @@ function PortfolioItem(props) {
     };
     return (
         <>
-            <div className="card pi" onClick={goToProject}>
+            <Link className="card pi" to={props.portfolioLink}>
                 <div className="card-title pi-title">
                     <h4>{props.titleText}</h4>
                 </div>
                 <div className="card-body pi-body">
                     <p>{props.bodyText}</p>
                 </div>
-            </div>
+            </Link>
+            {/*<div className="card pi" onClick={goToProject}>*/}
+            {/*    <div className="card-title pi-title">*/}
+            {/*        <h4>{props.titleText}</h4>*/}
+            {/*    </div>*/}
+            {/*    <div className="card-body pi-body">*/}
+            {/*        <p>{props.bodyText}</p>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
         </>
     )
 }
