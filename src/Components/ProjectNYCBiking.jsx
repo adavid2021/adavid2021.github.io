@@ -45,7 +45,8 @@ function ProjectNYCBiking() {
                                             <b>Extract</b> the data from its original sources, <b>Transform</b> the data
                                             to
                                             fit the
-                                            database schema, <b>Load</b> the processed relational data into a database
+                                            database schema, <b>Load</b> the processed data into a scalable relational
+                                            database
                                         </li>
                                         <li>
                                             Answer the business questions with queries and visualizations
@@ -112,7 +113,7 @@ function ProjectNYCBiking() {
                                 <p>
                                     My two business questions were focused on when and where cyclist collisions happened
                                     and where cycling traffic was. Knowing where collisions are more likely could inform
-                                    local officials on where to add traffic signs or ways to warn drivers of cyclists.
+                                    local officials on how to prioritize warning city drivers of cyclists.
                                     These questions are also important to bike rental companies like Citi Bike which
                                     could use this information to determine where to set up new bike rental stations.
                                 </p>
@@ -123,9 +124,10 @@ function ProjectNYCBiking() {
                                 <hr/>
                                 <h5>Designing a Relational Database</h5>
                                 <p>
-                                    To answer these business questions, I needed to combine several tables. The three
+                                    To answer these business questions, I combined several tables from the open data
+                                    dataset. The three
                                     csvs
-                                    I had access to were the citi_bike_station data, the citi_bike_trip data and the
+                                    I used were the citi_bike_station data, the citi_bike_trip data and the
                                     collision data.
                                     The common connection across these tables was location, so a major design component
                                     in
@@ -158,9 +160,8 @@ function ProjectNYCBiking() {
                                 <br/>
                                 <br/>
                                 <p>
-                                    I also documented which slowly changing dimension (SCD) each dimension would need
-                                    to correspond with to preserve the structure of the database as it changes over
-                                    time.
+                                    I also documented which slowly changing dimension (SCD) each dimension corresponded
+                                    with to support scalable data infrastructure.
                                 </p>
                                 <br/>
                                 <h5>ETL</h5>
@@ -200,7 +201,7 @@ function ProjectNYCBiking() {
                                     meaning from
                                     the data.
                                     I wrote five queries to investigate the data and answer the business questions
-                                    (click the "View Query Images" button to see them).
+                                    (click on the image below to see them).
                                 </p>
                                 <br/>
                                 <div className="img-container hover-pointer" onClick={changeQueryShowing}>
@@ -212,7 +213,7 @@ function ProjectNYCBiking() {
                                 <br/>
                                 <p>
                                     Then, I visualized some data from the database to further
-                                    understand the data (click the "View Visualization Images" button to see them).
+                                    understand the data (click on the image below to see them).
                                 </p>
                                 <br/>
                                 <div className="img-container hover-pointer" onClick={changeVizShowing}>

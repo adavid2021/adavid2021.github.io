@@ -33,7 +33,8 @@ function ProjectJourneys() {
                                     <h4>Goals</h4>
                                     <ul>
                                         <li>
-                                            Implement a website showing career paths at client worksite
+                                            Implement a website showing potential career paths for employees at the
+                                            client's worksite
                                         </li>
                                     </ul>
                                 </div>
@@ -49,7 +50,7 @@ function ProjectJourneys() {
                                     <b>General:</b>
                                     <br/>
                                     <p>
-                                        I demonstrated versions of the website to clients and answered questions about
+                                        I demoed versions of the website to clients and answered questions about
                                         its functionality.
                                     </p>
                                 </div>
@@ -57,25 +58,27 @@ function ProjectJourneys() {
                             </div>
                             <div className="project-lower-band">
                                 <h5>Project Overview</h5>
-                                <p>I was contracted by a maritime company to implement a website which visualized
+                                <p>
+                                    I was contracted by a maritime company to implement a website which visualized
                                     potential
                                     career routes. The site let users see position details and compare
                                     salaries of two positions.
-                                    The should be up at </p> <a href="https://www.demos.journeys.mindandculture.org/"
-                                                                target="_blank">this link.</a>
+                                    A version of the site should be up at <a
+                                    href="https://www.demos.journeys.mindandculture.org/"
+                                    target="_blank">this link.</a>
+                                </p>
                                 <hr/>
                                 <h5>Intro Questionnaire</h5>
                                 <p>
-                                    Upon entering the website, the user is prompted with a questions which dictate their
-                                    career path.
-                                    The site asks for their education level, their main career goal and their skill-set.
-                                    This information is used to show what career paths they can take. If the user
+                                    Upon entering the website, the user is prompted with questions that are used to
+                                    represent their career path.
+                                    The site asks for their education level, their main career goals and their skills.
+                                    This information is used to show what career paths they can take. Then, If the user
                                     clicks the "Pathways" button,
                                     they are taken to a page which shows a graph of career position nodes showing which
                                     positions lead to which. If the user clicks the
                                     position comparison button, they can look at the projected salaries of two jobs and
-                                    see
-                                    their job details.
+                                    see the job's details.
                                 </p>
                                 <br/>
                                 <div className="img-container hover-pointer" onClick={changeQuestShowing}>
@@ -88,15 +91,14 @@ function ProjectJourneys() {
                                 <h5>The Pathways Page</h5>
                                 <p>
                                     After completing the questionnaire, the user has access to the career pathways page
-                                    which
-                                    If a user clicks on a
-                                    position, they can see more details about the position like its description, salary
-                                    range, benefits, education requirement, skills and video resources associated with
+                                    where
+                                    if a user clicks on a
+                                    position node, they can see more details like its description, salary
+                                    range, benefits, education requirement, skills and videos associated with
                                     the position. A user can also click on the "learn more" button to see a projection
                                     of salary after working at the position for a specified number of years. Using
-                                    filters on the side, a user can adjust various specifications of jobs they are
-                                    interested in. Once the user changes which filters are selected, the graph is
-                                    re-rendered. All filter data is saved in the URL allowing users to return to their
+                                    filters on the side, a user can specify the details of jobs they are
+                                    interested in. All submitted filters are saved in the URL allowing users to return to their
                                     career career graph if they copy and save the link somewhere.
                                 </p>
                                 <br/>
@@ -113,8 +115,7 @@ function ProjectJourneys() {
                                     "journey". They can do this from the career pathways page by selecting a job node
                                     from the graph and clicking the "add to my journey" button. This saves the position
                                     to a pdf file viewable upon clicking the "my journey" button from the career
-                                    pathways page. A user can download a pdf of their journey to print or save to their
-                                    device.
+                                    pathways page.
                                 </p>
                                 <br/>
                                 <div className="img-container hover-pointer" onClick={changeJourneyShowing}>

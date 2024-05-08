@@ -21,13 +21,11 @@ function ProjectCNRC() {
                                 <ul>
                                     <li>
                                         Determine which
-                                        cognitive measures are most important in predicting
-                                        nightmares in elderly people
+                                        cognitive measures cause nightmares in elderly people
                                     </li>
                                     <li>
                                         Program an optimized computational
-                                        model to potentially intervene nightmares
-                                        before they occur
+                                        model to predict nightmares
                                     </li>
                                     <li>
                                         Compare the predictive power of the computational model to that of
@@ -74,16 +72,15 @@ function ProjectCNRC() {
                             <h5>Preprocessing the Survey Data</h5>
                             <p>
                                 The survey we used measured various cognitive
-                                functions and mental disorders using various questionnaires like the DASS (Depression
+                                functions and mental disorders using questionnaires like the DASS (Depression
                                 Anxiety
                                 Stress Scale) and the Big Five Inventory (BFI). There were over 400 questions in the
-                                dataframe from various
-                                questionnaires and we wanted to represent both inputs and outputs more generally, so I
-                                reduced each
-                                participant's information to 20 subscales representing sums of important sections from
+                                dataframe from the
+                                survey and we wanted to represent both inputs and outputs more generally, so I
+                                aggregated relevant responses into 20 subscales representing sums of important sections
+                                from
                                 the questionnaires.
-                                Additionally,
-                                I needed to drop the data of several participants as they incorrectly claimed to meet
+                                I also dropped the data of several participants who incorrectly claimed to meet
                                 the
                                 nightmare disorder requirement (at least two nightmares each
                                 month). This left us with data from 118 participants.
@@ -96,8 +93,8 @@ function ProjectCNRC() {
                                 SPSS and R. I used ANOVAs to determine if certain demographic factors played a
                                 statistically
                                 significant role in determining nightmares. Then I used linear regressions to determine
-                                if
-                                combinations of cognitive measures could predict how frequently nightmares occurred, and
+                                if certain
+                                combinations of cognitive measures could predict how a person has nightmares, and
                                 the day-time
                                 effects they have on a person experiencing them.
                             </p>
@@ -107,6 +104,7 @@ function ProjectCNRC() {
                                 We used select cognitive measures to predict nightmare
                                 measures for each survey
                                 participant.
+                                <br/>
                                 <br/>
                                 The input measures were as follows:
                                 <br/>
@@ -146,21 +144,22 @@ function ProjectCNRC() {
                             </ul>
                             <p>
                                 In the linear regression model, we trained with all 118 participant data rows and found
-                                our goodness-of-fit measure (MSE) came out to be 0.0138 averaged across all four
-                                outputs.
+                                our goodness-of-fit measure (MSE) averaged across all four
+                                outputs was 0.0138.
                             </p>
                             <br/>
                             <p>
                                 In the computational model, we used theory from research on nightmare disorder and
                                 validation from
-                                neurology subject matter experts to refine a model simulating sleep.
+                                neuroscience subject matter experts to refine a model simulating sleep.
                                 I developed a way to calibrate this computational model by using an optimization
                                 algorithm
-                                from AnyLogic to find the best minimum and maximum values to scale each of the input and
+                                from software called AnyLogic to find the best minimum and maximum values to scale each
+                                of the input and
                                 output
                                 variables on. With these scaling parameters, I predicted each participant's nightmare
                                 indices
-                                and compared them with the true values to get the MSE. The average MSE of the four
+                                and found the MSE. The average MSE of the four
                                 outputs for the computational
                                 model was 0.0304 which was worse than that of its regression counter-part.
                             </p>

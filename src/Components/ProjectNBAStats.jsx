@@ -41,8 +41,8 @@ function ProjectNBAStats() {
                                     <b>Technical:</b>
                                     <br/>
                                     <p>
-                                        I used R to clean, hypothesis test, and build a linear regression model with a
-                                        real dataset. I learned about research standards which I incorporated in my
+                                        I used R to clean, hypothesis test, and build a linear regression model using
+                                        NBA data. I also learned about research standards which I incorporated in my
                                         paper.
                                     </p>
                                 </div>
@@ -50,18 +50,22 @@ function ProjectNBAStats() {
                                 <div className="project-upper-band-item lower-padding">
                                     <h4>Project Findings</h4>
                                     <p>
-                                        Investigating dataset entities closely can prevent the issues a predictive model
-                                        can have.
+                                        Investigating dataset entities closely can reduce noise which might limit the
+                                        prediction power of linear regression model.
                                     </p>
                                     <br/>
-                                    <a href="../../public/DAVID-TERM_PROJECT.pdf" target="_blank">full research paper link</a>
+                                    <p>
+                                        Check out my full research paper
+                                        <a href="./DAVID-TERM_PROJECT.pdf" target="_blank"> here</a>.
+                                    </p>
                                 </div>
                             </div>
                             <div className="project-lower-band">
                                 <h5>Project Overview</h5>
                                 <p>
                                     Using data from the <a
-                                    href="https://www.nba.com/stats/players/traditional/?sort=PLUS_MINUS&dir=-1&Season=2021-22&SeasonType=Regular%20Season&PerMode=Totals" target="_blank">NBA's
+                                    href="https://www.nba.com/stats/players/traditional/?sort=PLUS_MINUS&dir=-1&Season=2021-22&SeasonType=Regular%20Season&PerMode=Totals"
+                                    target="_blank">NBA's
                                     2021-2022 season player statistics</a>, I wanted to see if I
                                     could predict a player's impact on their team's success when they are on the court.
                                     When making the dataset, I saved data from each of the player rows such that each
@@ -73,9 +77,9 @@ function ProjectNBAStats() {
                                 <p>
                                     I represented player impact with the "+/-" (plus
                                     minus) variable which is the difference in points of the
-                                    player's team and the team they were facing while the player was on the court. For
-                                    example, if the score of a game when a player enters the court is 100 to 90 (where
-                                    the player's team has 100 points and the opposing team has 90) and the
+                                    player's team and the opposing team while the player was on the court. For
+                                    example, if the score of player's team is 100 and the opposing team has 90 points
+                                    when they start playing and the
                                     score is 110 to 95 when the leave the court, the player's +/- is +5 as 10 points
                                     were scored and 5 points were given up while they played. If the score after the
                                     player leaves the court is 110 to 104, their +/- would be -4.
@@ -85,12 +89,14 @@ function ProjectNBAStats() {
                                 <p>
                                     After adding the NBA data to a csv, I looked through the data to see what variables
                                     could cause problems for a predictive model. When looking at the field goal
-                                    percentage variable, I noticed that there many instances of players with exactly 0%,
-                                    50%, 33% and 100% field goal percentage. This happens to players with few minutes
-                                    played as they only take a few shots each season. If a player has 7 minutes played,
+                                    percentage variable, I noticed that there were many instances of players with
+                                    exactly a 0%,
+                                    50%, 33% and 100% field goal percentage. I discovered that this happens to players
+                                    with little time played in a season
+                                    as they only take a few shots. If a player has 7 minutes played,
                                     they may shoot 3 times and miss all three times giving them a 0% field goal
-                                    percentage. It's safe to say that a player who misses every shot they take is not
-                                    going to be drafted for an NBA team. Consequently, I removed "noise" player data by
+                                    percentage. This would not accurately reflect their shooting ability thus creating
+                                    outliers. Consequently, I removed "noisy" player data by
                                     only including players with 10 or more minutes played.
                                 </p>
                                 <br/>
@@ -106,7 +112,7 @@ function ProjectNBAStats() {
                                 <p>
                                     While the regression model only had an r-squared of 0.1885, meaning that the model
                                     only accounted for 18% of the overall variance, the p-value was less than an alpha
-                                    of 0.05 meaning that the changes in predictor values are related to change in the
+                                    of 0.05 meaning that the changes in predictor values were related to the change in the
                                     response variable.
                                 </p>
                                 <br/>
