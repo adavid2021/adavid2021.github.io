@@ -12,7 +12,7 @@ function VizCarouselPopup(props) {
                             <div className="carousel-inner">
                                 <div className="carousel-item active nyc-img-div"
                                      data-bs-interval="1000000">
-                                    <img src="../../public/Viz1.png"
+                                    <img src="./Viz1.png"
                                          alt="..." className="contain-this-carousel-image"/>
                                     <div className="popup-carousel-text">
                                         <h6>Visualization 1: Most used Citi Bike stations</h6>
@@ -29,7 +29,7 @@ function VizCarouselPopup(props) {
                                     </div>
                                 </div>
                                 <div className="carousel-item nyc-img-div" data-bs-interval="1000000">
-                                    <img src="../../public/Viz2.png" alt="..."
+                                    <img src="./Viz2.png" alt="..."
                                          className="contain-this-carousel-image"/>
                                     <div className="popup-carousel-text">
                                         <h6>Visualization 2: Top 6 Most biked months of each year</h6>
@@ -44,7 +44,7 @@ function VizCarouselPopup(props) {
                                     </div>
                                 </div>
                                 <div className="carousel-item nyc-img-div" data-bs-interval="1000000">
-                                    <img src="../../public/Viz3.png" alt="..."
+                                    <img src="./Viz3.png" alt="..."
                                          className="contain-this-carousel-image"/>
                                     <div className="popup-carousel-text">
                                         <h6>Visualization 3: Top 6 Most biked months of each year</h6>
@@ -58,7 +58,7 @@ function VizCarouselPopup(props) {
                                     </div>
                                 </div>
                                 <div className="carousel-item nyc-img-div" data-bs-interval="1000000">
-                                    <img src="../../public/Viz4.png"
+                                    <img src="./Viz4.png"
                                          alt="..." className="contain-this-carousel-image"/>
                                     <div className="popup-carousel-text">
                                         <h6>Visualization 4: Map of New York Boroughs</h6>
@@ -70,7 +70,7 @@ function VizCarouselPopup(props) {
                                     </div>
                                 </div>
                                 <div className="carousel-item nyc-img-div" data-bs-interval="1000000">
-                                    <img src="../../public/Viz5.png"
+                                    <img src="./Viz5.png"
                                          alt="..." className="contain-this-carousel-image"/>
                                     <div className="popup-carousel-text">
                                         <h6>Visualization 5: Symbol map of motor-vehicle accidents with injured cyclists
@@ -86,7 +86,7 @@ function VizCarouselPopup(props) {
                                     </div>
                                 </div>
                                 <div className="carousel-item nyc-img-div" data-bs-interval="1000000">
-                                    <img src="../../public/Viz6.png"
+                                    <img src="./Viz6.png"
                                          alt="..." className="contain-this-carousel-image"/>
                                     <div className="popup-carousel-text">
                                         <h6>Visualization 6: Symbol map of motor-vehicle accidents with injured cyclists
@@ -102,7 +102,7 @@ function VizCarouselPopup(props) {
                                     </div>
                                 </div>
                                 <div className="carousel-item nyc-img-div" data-bs-interval="1000000">
-                                    <img src="../../public/Viz7.png"
+                                    <img src="./Viz7.png"
                                          alt="..." className="contain-this-carousel-image"/>
                                     <div className="popup-carousel-text">
                                         <h6>Visualization 7: Cyclist-motor-vehicle collisions in New York City by time

@@ -95,7 +95,7 @@ function ProjectNBAStats() {
                                 </p>
                                 <br/>
                                 <div className="img-container hover-pointer" onClick={changeOutlierShowing}>
-                                    <img src="../../public/stats1.png"
+                                    <img src="./stats1.png"
                                          className="contain-this-image"></img>
                                     <div className="enlarge-img-text"><strong>Click to enlarge</strong></div>
                                 </div>
@@ -111,7 +111,7 @@ function ProjectNBAStats() {
                                 </p>
                                 <br/>
                                 <div className="img-container hover-pointer" onClick={changeResultsShowing}>
-                                    <img src="../../public/stats3.png"
+                                    <img src="./stats3.png"
                                          className="contain-this-image"></img>
                                     <div className="enlarge-img-text"><strong>Click for more info</strong></div>
                                 </div>
@@ -121,7 +121,7 @@ function ProjectNBAStats() {
                 </div>
             </div>
             <EnlargedImagePopup isShowing={isOutlierPopupShowing} setIsShowing={changeOutlierShowing}
-                                imgSrc="../../src/assets/stats1.png"/>
+                                imgSrc="./stats1.png"/>
             <ResultsCarouselPopup isShowing={isResultsPopupShowing} setIsShowing={changeResultsShowing}/>
         </>
     )

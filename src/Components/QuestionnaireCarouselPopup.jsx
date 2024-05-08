@@ -11,7 +11,7 @@ function QuestionnaireCarouselPopup(props) {
                              data-bs-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active nyc-img-div" data-bs-interval="1000000">
-                                    <img src="../../public/questionnaire1.png" alt="..."
+                                    <img src="./questionnaire1.png" alt="..."
                                          className="contain-this-carousel-image"/>
                                     <div className="popup-carousel-text">
                                         <h6>Home Page</h6>
@@ -24,7 +24,7 @@ function QuestionnaireCarouselPopup(props) {
                                     </div>
                                 </div>
                                 <div className="carousel-item nyc-img-div" data-bs-interval="1000000">
-                                    <img src="../../public/questionnaire2.png" alt="..."
+                                    <img src="./questionnaire2.png" alt="..."
                                          className="contain-this-carousel-image"/>
                                     <div className="popup-carousel-text">
                                         <h6>Questionnaire Prompt Page</h6>
@@ -38,7 +38,7 @@ function QuestionnaireCarouselPopup(props) {
                                     </div>
                                 </div>
                                 <div className="carousel-item nyc-img-div" data-bs-interval="1000000">
-                                    <img src="../../public/questionnaire3.png" alt="..."
+                                    <img src="./questionnaire3.png" alt="..."
                                          className="contain-this-carousel-image"/>
                                     <div className="popup-carousel-text">
                                         <h6>Job Comparison</h6>
@@ -52,7 +52,7 @@ function QuestionnaireCarouselPopup(props) {
                                     </div>
                                 </div>
                                 <div className="carousel-item nyc-img-div" data-bs-interval="1000000">
-                                    <img src="../../public/questionnaire4.png"
+                                    <img src="./questionnaire4.png"
                                          alt="..." className="contain-this-carousel-image"/>
                                     <div className="popup-carousel-text">
                                         <h6>Job Comparison Graph</h6>

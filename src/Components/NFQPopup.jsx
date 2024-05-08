@@ -7,7 +7,7 @@ function NFQPopup(props) {
             <div className={"popup-bg " + (props.isShowing ? "" : "hidden-div")}>
                 <div className="popup-inner">
                     <div className="popup-img-div">
-                        <img src="../../public/frequency.png" className="contain-this-image"></img>
+                        <img src="./frequency.png" className="contain-this-image"></img>
                     </div>
                     <div className="close-button-popup">
                         <i className="fa-solid fa-xmark" id="closeQCarousel"

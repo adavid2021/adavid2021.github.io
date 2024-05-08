@@ -11,7 +11,7 @@ function PathwaysCarouselPopup(props) {
                              data-bs-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active nyc-img-div" data-bs-interval="1000000">
-                                    <img src="../../public/path1.png" alt="..."
+                                    <img src="./path1.png" alt="..."
                                          className="contain-this-carousel-image"/>
                                     <div className="popup-carousel-text">
                                         <h6>Career Pathway Visualization</h6>
@@ -27,7 +27,7 @@ function PathwaysCarouselPopup(props) {
                                     </div>
                                 </div>
                                 <div className="carousel-item nyc-img-div" data-bs-interval="1000000">
-                                    <img src="../../public/path2.png" alt="..."
+                                    <img src="./path2.png" alt="..."
                                          className="contain-this-carousel-image"/>
                                     <div className="popup-carousel-text">
                                         <h6>Career Details</h6>

@@ -173,7 +173,7 @@ function ProjectCNRC() {
                             </p>
                             <br/>
                             <div className="img-container hover-pointer" onClick={changeNFQShowing}>
-                                <img src="../../public/frequency.png"
+                                <img src="./frequency.png"
                                      className="contain-this-image"></img>
                                 <div className="enlarge-img-text"><strong>Click to enlarge</strong></div>
                             </div>
@@ -183,7 +183,7 @@ function ProjectCNRC() {
             </div>
         </div>
         <EnlargedImagePopup isShowing={isNFQPopupShowing} setIsShowing={changeNFQShowing}
-                            imgSrc="../../src/assets/frequency.png"/>
+                            imgSrc="./frequency.png"/>
     </>)
 }
 

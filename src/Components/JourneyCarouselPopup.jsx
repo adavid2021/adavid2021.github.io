@@ -11,7 +11,7 @@ function JourneyCarouselPopup(props) {
                              data-bs-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active nyc-img-div" data-bs-interval="1000000">
-                                    <img src="../../public/journey1.png" alt="..."
+                                    <img src="./journey1.png" alt="..."
                                          className="contain-this-carousel-image"/>
                                     <div className="popup-carousel-text">
                                         <h6>User Journey Printout</h6>
@@ -26,7 +26,7 @@ function JourneyCarouselPopup(props) {
                                     </div>
                                 </div>
                                 <div className="carousel-item nyc-img-div" data-bs-interval="1000000">
-                                    <img src="../../public/journey11.png" alt="..."
+                                    <img src="./journey11.png" alt="..."
                                          className="contain-this-carousel-image"/>
                                     <div className="popup-carousel-text">
                                         <h6>Journey Overview</h6>

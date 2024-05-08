@@ -11,7 +11,7 @@ function QueryCarouselPopup(props) {
                              data-bs-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active nyc-img-div" data-bs-interval="1000000">
-                                    <img src="../../public/query1.png" alt="..."
+                                    <img src="./query1.png" alt="..."
                                          className="contain-this-carousel-image"/>
                                     <div className="popup-carousel-text">
                                         <h6>Query 1: Cyclists injured from motor-vehicle-related collisions by
@@ -50,7 +50,7 @@ function QueryCarouselPopup(props) {
                                     </div>
                                 </div>
                                 <div className="carousel-item nyc-img-div" data-bs-interval="1000000">
-                                    <img src="../../public/query2.png" alt="..."
+                                    <img src="./query2.png" alt="..."
                                          className="contain-this-carousel-image"/>
                                     <div className="popup-carousel-text">
                                         <h6>Query 2: Cyclists injured from motor-vehicle-related collisions by
@@ -71,7 +71,7 @@ function QueryCarouselPopup(props) {
                                     </div>
                                 </div>
                                 <div className="carousel-item nyc-img-div" data-bs-interval="1000000">
-                                    <img src="../../public/query3.png" alt="..."
+                                    <img src="./query3.png" alt="..."
                                          className="contain-this-carousel-image"/>
                                     <div className="popup-carousel-text">
                                         <h6>Query 3: Cyclists injured from motor-vehicle-related collisions by hour of
@@ -88,7 +88,7 @@ function QueryCarouselPopup(props) {
                                     </div>
                                 </div>
                                 <div className="carousel-item nyc-img-div" data-bs-interval="1000000">
-                                    <img src="../../public/query4.png"
+                                    <img src="./query4.png"
                                          alt="..." className="contain-this-carousel-image"/>
                                     <div className="popup-carousel-text">
                                         <h6>Query 4: Count of Citi Bike trips by trip start hour</h6>
@@ -102,7 +102,7 @@ function QueryCarouselPopup(props) {
                                     </div>
                                 </div>
                                 <div className="carousel-item nyc-img-div" data-bs-interval="1000000">
-                                    <img src="../../public/query5.png"
+                                    <img src="./query5.png"
                                          alt="..." className="contain-this-carousel-image"/>
                                     <div className="popup-carousel-text">
                                         <h6>Query 5: Citi Bike use (hours) by county</h6>
