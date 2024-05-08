@@ -54,7 +54,6 @@ function About() {
                                 </div>
                                 <div className="c-about-onefourth">
                                     <img src="./headshotIMG_2.png" className="about-img-face"/>
-                                    <img src="../../public/src/assets/img/headshotIMG_2.png" className="about-img-face"/>
                                 </div>
                             </div>
                             <hr/>
